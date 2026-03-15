@@ -1,0 +1,398 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+html{
+    font-size: 62.5%;
+   
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+
+.header{
+     width: 80%;
+      margin: 150px auto;   
+        
+          /* Ortaya alır */
+    background:rgb(31, 59, 92);
+    border-radius: 40px;        /* Oval yapı */
+    padding: 15px 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;                  /* Logo ile menü arası boşluk */
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15),
+            0 5px 15px rgba(47, 87, 133, 0.2);
+}
+
+
+.logo img {
+   width: 180px;
+    height: 80px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.navbar{
+    text-decoration: none;
+    text-align: center;
+    display: inline-flex;
+    gap: 80px;
+    color: #f1f0f5;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    transition: 0.3s;
+}
+.navbar a {
+    text-decoration: none;
+    color: #eef1f3;
+    font-weight: 500;
+}
+
+.buttons {
+   position: fixed;     
+    top: 70px;          
+    right: 30px;         
+    display: flex;
+    gap: 40px;
+}
+.btn-item{
+     border: none;             
+    outline: none;             
+    padding: 8px 15px;
+    border-radius: 20px;       
+    background-color: #27496d; 
+    color: rgb(223, 222, 228);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+     box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
+
+.btn-item:hover{
+background-color: black;
+transform: translateY(-3px);
+
+
+}
+
+
+.hero{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+}
+.hero-text{
+    max-width: 800px;
+}
+
+.hero h1{
+    font-size: 40px;
+       color: rgb(24, 24, 26);
+    margin-bottom: 25px;
+    
+}
+
+.hero p{
+    font-size: 15px;       /* yazı büyüklüğü */
+    line-height: 1.7;      /* satırlar arası boşluk */
+    color: #333;           /* yazı rengi */
+    max-width: 800px;      /* satırın çok uzamasını engeller */
+    margin: 0 auto 25px;   /* ortalar */
+    font-weight: 400; 
+     text-transform: none;     /* yazı kalınlığı */
+}
+
+
+.hero-car{
+    width: 700px;
+    max-width: 100%;
+    margin: 40px auto;
+    display: block;
+}
+
+.call-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #27496d;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.call-btn:hover{
+    background: red;
+}
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.service-box {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-box i {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.service-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+.contact-section .contact-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-section .contact-number {
+    font-size: 24px;
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ff4d4d;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer; /* İmleç el şeklinde */
+}
+
+.contact-section .contact-number:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+.contact-section .contact-info {
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.contact-section .contact-info h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.contact-section .contact-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contact-section .contact-info a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+.contact-section .contact-info a:hover {
+    text-decoration: underline;
+}
+.contact-section .contact-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Ortalanmış */
+    gap: 10px; /* İkon ve yazı arası boşluk */
+    color: #333;
+}
+
+.contact-section .contact-info i {
+    color: #ff4d4d; /* İkon rengi markaya uygun */
+    font-size: 20px;
+}
+
+.contact-section .contact-info a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-section .contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* blog kısmı buradan sonra */ 
+
+.blog-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.blog-section h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-text {
+    max-width: 800px; /* Metin genişliği sınırı */
+    text-align: center; /* Paragraflar ortalanmış */
+}
+
+.blog-text p {
+    font-size: 1.4rem; /* Daha okunaklı yazı boyutu */
+    line-height: 1.8;
+    color: black;
+    margin: 20px 0;
+    font-weight: 500;
+     text-transform: none;
+}
+
+.blog-img-inline {
+    margin: 20px 0;
+    text-align: center; /* Görsel ortalanmış */
+}
+
+.blog-img-inline img {
+    max-width: 80%; /* Görseller metne göre daha küçük */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.blog-img-inline img:hover {
+    transform: scale(1.03); /* Hover ile hafif büyüme efekti */
+}
+
+.blog-text a {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.blog-text a:hover {
+    text-decoration: underline;
+}
+
+.blog-text .call-btn-2{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#27496d;
+    color:white;
+    padding:12px 20px;
+    font-size:18px;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+.blog-text .call-btn-2:hover{
+    background:red;
+}
+
+
+
+
+
+
+.floating-call-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #e63946;
+    color: white;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+.floating-call-btn:hover{
+    background:#c1121f;
+    transform:scale(1.05);
+}
